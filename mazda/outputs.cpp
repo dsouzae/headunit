@@ -283,10 +283,10 @@ void VideoOutput::input_thread_func()
                         break;
                     case KEY_T: // FAV
                         printf("KEY_T\n");
-                        if (isPressed) {
-                          callbacks->takeVideoFocus();
-                        }
                         break;
+                    }
+                    if (isPressed) {
+                      callbacks->takeVideoFocus();
                     }
                     if (scanCode != 0 || scrollAmount != 0)
                     {
