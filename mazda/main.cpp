@@ -178,7 +178,7 @@ int main (int argc, char *argv[])
             /* Start gstreamer pipeline and main loop */
 
             // GPS processing
-            mzd_gps_start(&gps_location_handler);
+            //mzd_gps_start(&gps_location_handler);
 
             printf("Starting Android Auto...\n");
 
@@ -197,8 +197,8 @@ int main (int argc, char *argv[])
             printf("waiting for nm_thread\n");
             nm_thread.join();
 
-            printf("waiting for gps_thread\n");
-            mzd_gps_stop();
+            //printf("waiting for gps_thread\n");
+            //mzd_gps_stop();
 
             printf("shutting down\n");
 
